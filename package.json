@@ -1,0 +1,39 @@
+{
+  "name": "rehype-code-language-labels",
+  "version": "0.0.1",
+  "description": "Rehype plugin that create small tag before code section when parsing MD code blocks.",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsup"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sfnvm/rehype-code-language-labels.git"
+  },
+  "keywords": [
+    "code-language-labels",
+    "language-labels",
+    "mdx",
+    "rehype",
+    "rehype-plugin",
+    "remark",
+    "unified"
+  ],
+  "author": "Trung Pham",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sfnvm/rehype-code-language-labels/issues"
+  },
+  "homepage": "https://github.com/sfnvm/rehype-code-language-labels#readme",
+  "dependencies": {
+    "hast": "^1.0.0",
+    "unist-util-visit": "^5.0.0"
+  },
+  "devDependencies": {
+    "rehype": "^13.0.1",
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.2"
+  }
+}

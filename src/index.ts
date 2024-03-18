@@ -35,11 +35,12 @@ function rehypeCodeLanguageLabels(
       const languageClass = classNames?.find((cn) =>
         cn.startsWith("language-")
       );
+
+      if (!languageClass) return;
+
       const targetLanguage = languageClass
         ? languageClass.slice(9)
         : fallbackLanguage;
-
-      if (!targetLanguage) return;
 
       parent.children.splice(index!, 0, {
         type: "element",

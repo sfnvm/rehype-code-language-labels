@@ -1,6 +1,6 @@
 {
   "name": "rehype-code-language-labels",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Rehype plugin that creates an element before the code section when parsing Markdown code blocks.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",

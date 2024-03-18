@@ -13,12 +13,10 @@ function rehypeCodeLanguageLabels(
   {
     customTagName = "small",
     customClassName = "rehype-code-language-label",
-    titleSeparator = "-",
     fallbackLanguage = "",
   }: Options = {
     customTagName: "small",
     customClassName: "rehype-code-language-label",
-    titleSeparator: "-",
     fallbackLanguage: "",
   }
 ) {
@@ -37,13 +35,9 @@ function rehypeCodeLanguageLabels(
       const languageClass = classNames?.find((cn) =>
         cn.startsWith("language-")
       );
-
-      const targetLanguage = (
-        languageClass ? languageClass.slice(9) : fallbackLanguage
-      )
-        ?.split(":")[0]
-        ?.split(" ")[0]
-        ?.split(titleSeparator)[0];
+      const targetLanguage = languageClass
+        ? languageClass.slice(9)
+        : fallbackLanguage;
 
       if (!targetLanguage) return;
 

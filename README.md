@@ -1,6 +1,6 @@
 # rehype-code-language-labels
 
-Rehype plugin that create element before code section when parsing Markdown code blocks.
+Rehype plugin that creates an element before the code section when parsing Markdown code blocks.
 
 ## Installation
 

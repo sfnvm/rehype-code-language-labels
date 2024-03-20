@@ -5,7 +5,6 @@ import type { BuildVisitor, VisitorResult } from "unist-util-visit";
 type Options = {
   customTagName?: string;
   customClassName?: string;
-  titleSeparator?: string;
   fallbackLanguage?: string;
 };
 
@@ -36,7 +35,7 @@ function rehypeCodeLanguageLabels(
         cn.startsWith("language-")
       );
 
-      if (!languageClass) return;
+      if (!languageClass && !fallbackLanguage) return;
 
       const targetLanguage = languageClass
         ? languageClass.slice(9)
